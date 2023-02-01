@@ -1,27 +1,22 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 body {
-  background-color: #8754ff;
+  background-color: #1F4DDB;
 }
 .container {
   width: 32.25em;
-  background-color: #efefef;
+  background-color: #fff;
   padding: 5em 2.75em;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   border-radius: 0.7em;
-  box-shadow: 0 1em 4em rgba(71, 50, 4, 0.3);
+  box-shadow: 0px 0px 15px 5px #fff;
 }
 input,
 #submit {
   border: none;
   outline: none;
+  display: block;
   display: block;
 }
 input {
@@ -36,8 +31,8 @@ input {
   left: 0;
   font-size: 1.1em;
   width: 7em;
-  background-color: #8754ff;
-  color: #efefef;
+  background-color: #1F4DDB;
+  color: #fff;
   padding: 0.8em 0;
   margin-top: 2em;
   border-radius: 0.3em;
@@ -47,4 +42,9 @@ input {
   margin-top: 1.5em;
   color: #34bd34;
   visibility: hidden;
+}
+@media (max-width: 576px) {
+  .container {
+    width: 16.25em !important;
+  }
 }

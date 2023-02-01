@@ -44,10 +44,10 @@ submitBtn.addEventListener("mouseover", () => {
     let offset = submitRect.left - containerRect.left;
     console.log(offset);
     if (offset <= 100) {
-      submitBtn.style.transform = "translateX(16.25em)";
+      submitBtn.style.marginLeft = "auto";
     }
     else {
-      submitBtn.style.transform = "translateX(0)";
+      submitBtn.style.marginLeft = "0";
     }
   }
 });
